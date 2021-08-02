@@ -1,23 +1,3 @@
-// console.log("Hello");
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click', function (){
-  //logic
-  searchInputEl.focus();
-});
-// focuse되었을때
-searchInputEl.addEventListener('focus', function(){
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-});
-// focus 해제되었을때
-searchInputEl.addEventListener('blur', function(){
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-});
-
-
 //10.3 화명 스크롤이 일정길이 이상 길어지면 Badge가 Scroll되도록 : GSAP 에니메이션 효과 사용
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');  // fo 1. 9 home Scroll
@@ -185,7 +165,4 @@ spyEls.forEach(function(spyEl) {
 
 
 
-// 당해년도 가져오기
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
 
